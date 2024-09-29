@@ -10,7 +10,7 @@ function Nav({ children }: { children: string | JSX.Element | ReactNode}) {
       color:colors.teal,
       transition:"0.3s"
     }}
-     >{children}</Text>
+     >{children}  </Text>
   )
 }
 export default Nav

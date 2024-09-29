@@ -1,6 +1,8 @@
+import ListaDesplegable from "../../components/Listas/ListaDesplegable/ListaDesplegable"
+
 function Inicio() {
   return (
-    <div>Inicio</div>
+    <ListaDesplegable />
   )
 }
 export default Inicio
