@@ -1,8 +1,10 @@
 import ListaDesplegable from "../../components/Listas/ListaDesplegable/ListaDesplegable"
+import Slider from "./Components/Slider/Slider"
 
 function Inicio() {
   return (
-    <ListaDesplegable />
+    <Slider />
+    
   )
 }
 export default Inicio

@@ -4,6 +4,7 @@ function Slider() {
   return (
     <Box>
         {/* Categorias */}
+        
         {/* Slider de productos facebook */}
     </Box>
   )
