@@ -1,15 +1,18 @@
-import { Box } from "@chakra-ui/react"
-import { colors } from "../../../configVariables/colors"
-import Desplegable from "./Desplegable"
-import DesplegableFoto from "./DesplegableFoto"
-
-function ListaDesplegable({datos,children}:{datos:Arra,children: JSX.Element}) {
-  return (
-    <Box bg={colors.orange} w="22%" maxHeight={`calc(100vh - 100px)`} >
-      <Desplegable />
-      <Desplegable />
-      <DesplegableFoto />
-    </Box>
-  )
+import { Box, BoxProps } from "@chakra-ui/react";
+import { colors } from "../../../configVariables/colors";
+import { cloneElement, ReactElement } from "react";
+interface listadesplegable extends BoxProps {
+  children: ReactElement;
+  items: Array<any>;
 }
-export default ListaDesplegable
+
+function ListaDesplegable({ children, items, ...props }: listadesplegable) {
+  return (
+    <Box w="300px" bg={colors.orange} {...props}>
+      {items.map((item, index) =>
+        cloneElement(children, { key: index, ...item })
+      )}
+    </Box>
+  );
+}
+export default ListaDesplegable;

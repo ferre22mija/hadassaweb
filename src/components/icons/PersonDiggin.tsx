@@ -1,6 +1,6 @@
 import { Icon, IconProps } from "@chakra-ui/react"
 
-const CartShop = (props:IconProps) => (
+const PersonDiggin = (props:IconProps) => (
     <Icon viewBox="0 0 576 512" {...props}>
       <path
         fill='currentColor'
@@ -8,4 +8,4 @@ const CartShop = (props:IconProps) => (
       />
     </Icon>
   )
-export default CartShop
+export default PersonDiggin

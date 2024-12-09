@@ -1,6 +1,26 @@
 export const CATEGORIAS = [
-    { id:1 , descripcion:"construccion", padre:null, imagen:"",icono:"PersonDiggin"},
-    { id:2 , descripcion:"Gasfiteria", padre:null, imagen:"",icono:"CartShop"},
-
+    { id: 1, descripcion: "construccion", padre: null, imagen: "", icono: "PersonDiggin", nivel: 1 },
+  { id: 2, descripcion: "agregados", padre: 1, imagen: "", icono: "CartShop", nivel: 2 },
+  { id: 3, descripcion: "hormigon", padre: 2, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 4, descripcion: "arena fina", padre: 2, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 5, descripcion: "arena gruesa", padre: 2, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 6, descripcion: "piedra chancada", padre: 2, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 7, descripcion: "confetillo", padre: 2, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 8, descripcion: "asentar", padre: 2, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 9, descripcion: "ladrillos", padre: 1, imagen: "", icono: "CartShop", nivel: 2 },
+  { id: 10, descripcion: "techo y pared", padre: 9, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 11, descripcion: "12", padre: 10, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 12, descripcion: "15", padre: 10, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 13, descripcion: "18 huecos", padre: 10, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 14, descripcion: "8", padre: 10, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 15, descripcion: "pastelero", padre: 10, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 16, descripcion: "pandereta", padre: 10, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 17, descripcion: "tecnopor", padre: 9, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 18, descripcion: "12", padre: 17, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 19, descripcion: "15", padre: 17, imagen: "", icono: "CartShop", nivel: 4 },
+  { id: 20, descripcion: "cementos", padre: 1, imagen: "", icono: "CartShop", nivel: 2 },
+  { id: 21, descripcion: "verde", padre: 20, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 22, descripcion: "rojo", padre: 20, imagen: "", icono: "CartShop", nivel: 3 },
+  { id: 23, descripcion: "apu", padre: 20, imagen: "", icono: "CartShop", nivel: 3 }
 
 ]
