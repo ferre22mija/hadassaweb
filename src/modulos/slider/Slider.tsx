@@ -5,7 +5,7 @@ const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const screenWidth = window.innerWidth; // Ancho de la pantalla
-  const sliderWidth = screenWidth - 300; // Ancho del slider (300px menos que la pantalla)
+  const sliderWidth = screenWidth ; // Ancho del slider (300px menos que la pantalla)
 
   // Cambia de imagen automáticamente cada 4 segundos
   useEffect(() => {
@@ -26,7 +26,7 @@ const Slider = ({ images }) => {
   return (
     <Box
       width={`${sliderWidth}px`}
-      height="calc(100vh - 100px)"
+      height={["200px","calc(100vh - 100px)"]}
       overflow="hidden"
       position="relative"
       mx="auto"

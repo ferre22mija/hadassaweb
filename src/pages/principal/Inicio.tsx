@@ -2,6 +2,8 @@ import { Flex } from "@chakra-ui/react";
 import Categorias from "../../modulos/categorias/Categorias";
 import Slider from "../../modulos/slider/Slider";
 import ListaGrid from "../../components/Listas/ListaGrid/ListaGrid";
+import UltimosProductos from "../../modulos/productos/UltimosProductos";
+import Ofertas from "../../modulos/ofertas/Ofertas";
 
 function Inicio() {
   const images = [
@@ -14,17 +16,15 @@ function Inicio() {
     <>
       <Flex>
         {/* categorias */}
-        <Categorias />
+        {/* <Categorias /> */}
         {/* slider */}
         <Slider images={images} />
       </Flex>
 
       {/* ofertas */}
-
-      {/* anunciones facebook */}
-
+      <Ofertas />
       {/* ultimos productos */}
-      <ListaGrid />
+      <UltimosProductos />
     </>
   );
 }
